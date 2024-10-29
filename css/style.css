@@ -1,0 +1,76 @@
+
+header {
+    height: 30vh;
+    overflow: visible;
+  }
+  
+  header img {
+    width: 100%; 
+    height: 100%;
+    object-fit:contain 
+  }
+  
+body{
+    background-color: #D9CDBF ;
+    font-family: 'Montserrat';
+}
+
+nav{
+    background-color:#1A3940 ;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-menu {
+    background-color: #1A3940;
+    font-style:italic;
+    font-weight: bold;
+    padding: 11px;
+}
+
+a {
+    color: #D9CDBF; /* Cor do link */
+    text-decoration: none; 
+    margin-right: 1px; 
+}
+
+h2{
+    color:#1A3940;
+}
+
+.ofertas {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.item-oferta {
+    padding: 10px;
+    text-align: center;
+    border-radius: 1%;
+    width: 200px; 
+    box-sizing: border-box;
+}
+
+.item-imagem {
+    width: 100%;
+    height: 220px;
+    background-size:cover;
+    background-position:center;
+    border-color: #1A3940;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 0.9em;
+    color: #666;
+}
