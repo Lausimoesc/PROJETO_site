@@ -1,22 +1,24 @@
-
 header {
     height: 30vh;
     overflow: visible;
-  }
-  
-  header img {
-    width: 100%; 
-    height: 100%;
-    object-fit:contain 
-  }
-  
-body{
-    background-color: #D9CDBF ;
-    font-family: 'Montserrat';
 }
 
-nav{
-    background-color:#1A3940 ;
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+body {
+    background-color: #D9CDBF;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+
+
+nav {
+    background-color: #1A3940;
 }
 
 .menu {
@@ -26,40 +28,42 @@ nav{
 
 .item-menu {
     background-color: #1A3940;
-    font-style:italic;
+    font-style: italic;
     font-weight: bold;
     padding: 11px;
 }
 
 a {
-    color: #D9CDBF; /* Cor do link */
-    text-decoration: none; 
-    margin-right: 1px; 
+    color: #D9CDBF;
+    /* Cor do link */
+    text-decoration: none;
+    margin-right: 1px;
 }
 
-h2{
-    color:#1A3940;
+h2 {
+    color: #1A3940;
 }
 
 .ofertas {
     display: flex;
-    gap: 20px; 
-    flex-wrap: wrap; 
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item-oferta {
     padding: 10px;
     text-align: center;
     border-radius: 1%;
-    width: 200px; 
+    width: 200px;
     box-sizing: border-box;
 }
 
 .item-imagem {
     width: 100%;
     height: 220px;
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     border-color: #1A3940;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -74,3 +78,154 @@ p {
     font-size: 0.9em;
     color: #666;
 }
+
+/* TRABALHO GRID */
+
+.galeria {
+    padding: 20px;
+    background-color: #1A3940;
+  }
+  
+  .galeria h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1A3940;
+  }
+  
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .grid-galeria .item {
+    text-align: center;
+    border: 1px solid #D9CDBF;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #D9CDBF;
+    max-height: min-content;
+  }
+  
+  .grid-galeria .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .grid-galeria .item p {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .formulario {
+    padding: 20px;
+    background-color: #1A3940;
+  }
+  
+  .formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .grid-formulario {
+    display: grid;
+    grid-template-columns: 1fr; /* Por padrão, uma coluna */
+    gap: 20px;
+    align-items: center;
+  }
+  
+  form {
+    background-color: #dfdcd9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    border: 1px solid #D9CDBF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #1A3940;
+    color: #D9CDBF;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #D9CDBF;
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  figcaption {
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #D9CDBF;
+    margin-top: 10px;
+  }
+  
+
+  @media (min-width: 768px) {
+    .grid-formulario {
+      grid-template-columns: 2fr 1fr; 
+    }
+  
+    figure {
+      max-width: 100%;
+    }
+
+  }
+  
+
+  @media (max-width: 767px) {
+    .grid-formulario {
+      grid-template-columns: 1fr; 
+    }
+  
+    figure {
+      margin-top: 20px; 
+    }
+  }
+  
