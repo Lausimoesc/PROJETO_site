@@ -13,9 +13,8 @@ body {
     background-color: #D9CDBF;
     font-family: 'Montserrat';
     text-align: center;
+    padding-top: 80px;
 }
-
-
 
 nav {
     background-color: #1A3940;
@@ -206,6 +205,7 @@ p {
     margin-top: 10px;
   }
   
+  /* GRID */
 
   @media (min-width: 768px) {
     .grid-formulario {
@@ -229,3 +229,30 @@ p {
     }
   }
   
+
+  /* MODAIS */
+
+.modal-content {
+  background-color: #1A3940;
+}
+
+  /* TABELA */
+
+.custom-table th, .custom-table td {
+  border: 1px solid #1A3940; /* Borda das células */
+  background-color: #D9CDBF;
+  color: #1A3940;
+}
+
+.custom-table th {
+  background-color: #1A3940; /* Cor de fundo do cabeçalho */
+  color: #D9CDBF; /* Cor do texto no cabeçalho */
+}
+
+/* CARROSSEL */
+
+.carousel {
+  width: 15%; /* Ocupa 100% da largura do site */
+  height: 300px; /* Altura fixa ou ajustável */
+  margin: 0 auto;
+}
